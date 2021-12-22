@@ -21,7 +21,7 @@ namespace ConsoleAulaEntity
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Data Source=localhost; initial Catalog=CodeFirstEntity; User ID=usuario;password=senha;language=Portuguese;Trusted_Connection=True");
-            //optionsBuilder.UseLazyLoadingProxies();
+            optionsBuilder.UseLazyLoadingProxies();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

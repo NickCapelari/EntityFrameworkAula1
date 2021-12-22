@@ -11,7 +11,7 @@ namespace ConsoleAulaEntity.Models
         public int Id { get; set; }
         public string Nome { get; set; }
 
-        public ICollection<Email> Emails { get; set; }
+        public virtual ICollection<Email> Emails { get; set; }
 
     }
 }
